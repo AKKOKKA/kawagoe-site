@@ -1,0 +1,352 @@
+html {
+  font-size: 16px; /* ベースを16px = 1rem */
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family:"Zen Kaku Gothic New", arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  font-size: 1rem;
+}
+
+header {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.header {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between; /* 左右に分ける */
+  align-items: center;            /* 縦中央揃え */
+  margin: 0 auto; /* 中央寄せしたい場合 */
+}
+
+.logo {
+  width: 180px;
+  display: block;
+  margin: 0; /* 余計な中央寄せ防止 */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo:hover {
+  transform: translateY(-6px);
+  opacity: 0.9;
+}
+
+
+.nav-list {
+  gap: 20px;
+  list-style: none;
+  font-size: 1rem;
+  display: flex;
+  margin-right: 30px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #333;
+  position: relative;
+  padding: 4px 0;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #00695c;
+  transition: width 0.3s ease;
+}
+
+.nav-list li a:hover {
+  color: #00695c;
+}
+
+.nav-list li a:hover::after {
+  width: 100%;
+}
+
+.main-section { 
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  padding:0 30px;
+}
+
+.main-image {
+  width: 100%;      /* 親に合わせて縮小 */
+  height: auto;     /* 比率を保つ */
+  max-width: 800px; /* 最大幅を決めておくと崩れにくい */
+  display: block;
+  margin: 0 auto;
+  transform: scale(1.05); /* ややズームイン効果 */
+  animation: fadeInZoom 2s ease-out forwards;
+}
+
+.headline-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* 中央寄せしたい場合 */
+}
+
+.headline-animate {
+  opacity: 0;
+  animation: slideInLeftFade 1.2s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.visually-hidden {
+  position: absolute;         /* 通常のレイアウトフローから外す */
+  width: 1px;                 /* 小さくして */
+  height: 1px;                /* 見えないサイズにする */
+  padding: 0;                 /* 余白なし */
+  overflow: hidden;           /* 中身をはみ出させない */
+  clip: rect(0 0 0 0);        /* 表示範囲を0に切り取る（旧式のclip）*/
+  white-space: nowrap;        /* 改行を許さない */
+  border: 0;                  /* 枠線もなし */
+}
+
+.text-wrapper h2 {
+  font-size: 1.5rem;
+  color: #00695c;
+  margin: 0;
+  font-weight: bold;
+  padding: 2rem 0 0.5rem 0;
+}
+
+.text-wrapper p{
+  padding: 0 0 50px 0;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+.text-wrapper {
+  max-width: 600px;   /* 画像より狭く */
+  margin: 0 auto 0;      /* 中央に配置 */
+  text-align: center;  /* テキストも中央に */
+  margin-bottom: 0;/* 上下の余白（調整自由） */
+  padding-bottom: 0;
+}
+
+#kawagoe-section {
+  padding: 0 40px 30px 40px;
+  background-color: #fdeeee;
+  border-radius: 50px;
+  max-width: 800px;
+  margin: 0 auto; /* 中央寄せしたい場合 */
+}
+
+.section-title-img {
+  display: block;
+  max-width: 330px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto; /* 中央寄せしたい場合 */
+}
+
+.sub-heading {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;      /* 中央に配置 */
+}
+
+.image-and-text {
+  width: 100%;
+  margin: 0 auto; 
+}
+
+.sub-image {
+  display: block;
+  width: 100%;
+}
+
+.sub-heading p {
+  margin-top: 10px;/* 上下の余白（調整自由） */
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  max-width: 650px;
+  text-align: left;
+  width: 100%;
+  padding:10px 20px;
+}
+
+#voice-section {
+  padding: 40px 40px 30px 40px;
+  max-width: 800px;
+  margin: 0 auto; /* 中央寄せしたい場合 */
+}
+
+.voice-title {
+  position: relative;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* 中央寄せしたい場合 */
+}
+
+.voice-title-img {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.voice-title::before {
+  content: "";
+  position: absolute;
+  top: -40px; /* 上に出す */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 40px;
+  background-color: #f7d6dc; /* 薄いピンク色 */
+}
+
+.voice-item {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between; /* 左右に分ける */
+  align-items: center;            /* 縦中央揃え */
+  margin: 40px auto; /* 中央寄せしたい場合 */
+}
+
+.voice-image {
+  width: 140px;
+  display: block;
+  margin: 0; /* 余計な中央寄せ防止 */
+}
+
+.voice-text {
+  margin-left: 50px;
+}
+
+.voice-text h3 {
+  color: #00695c;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.voice-text p {
+  margin: 0;
+}
+
+#migration-info {
+  padding: 40px 0;
+}
+
+.migration-inner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  gap: 30px;
+  background-color: #C4CDD0;
+}
+
+.migration-left {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.migration-btn {
+  background-color: #00695c;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 4px;
+  line-height: 1.6;
+}
+
+.migration-right {
+  flex: 2;
+  min-width: 300px;
+}
+
+.migration-right h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.migration-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.migration-right li {
+  margin-bottom: 15px;
+}
+
+.icon {
+  color: #00695c;
+  margin-right: 5px;
+}
+
+.url {
+  font-size: 14px;
+  color: #555;
+}
+
+.footer-logo {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-logo-image {
+  width: 180px;
+  margin: 0;
+}
+
+.footer-logo-link {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo-link:hover {
+  transform: translateY(-4px);
+}
+
+.copyright {
+  font-size: 12px;
+  color: #888;
+  margin-top: 10px;
+}
+
+@keyframes slideInLeftFade {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInZoom {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
