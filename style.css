@@ -280,13 +280,15 @@ header {
 }
 
 .migration-right {
+  padding: 20px 0;
   flex: 2;
   min-width: 300px;
 }
 
-.migration-right h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
+.migration-right h2 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: lighter;
 }
 
 .migration-right ul {
@@ -350,3 +352,69 @@ header {
     transform: scale(1);
   }
 }
+/* ------------------------------
+   ▼ スマホ（幅768px以下）対応
+------------------------------- */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0 0 0;
+    padding-left: 0;
+  }
+
+  .main-section {
+    padding: 0 20px;
+  }
+
+  .text-wrapper {
+    padding: 0 20px;
+  }
+
+  #kawagoe-section {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .voice-item {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 30px auto;
+  }
+
+  .voice-text {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .migration-inner {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .migration-left,
+  .migration-right {
+    width: 100%;
+  }
+
+  .migration-right h2 {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .footer-logo-image {
+    width: 140px;
+  }
+}
+
