@@ -362,59 +362,59 @@ header {
 
   .header {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
+    align-items: center;
+    padding: 15px 10px;
   }
 
   .nav-list {
     flex-direction: column;
+    align-items: center;
     gap: 10px;
     margin: 10px 0 0 0;
     padding-left: 0;
   }
 
-  .main-section {
+  .main-section,
+  .text-wrapper,
+  #kawagoe-section,
+  #voice-section {
     padding: 0 20px;
   }
 
-  .text-wrapper {
-    padding: 0 20px;
-  }
-
-  #kawagoe-section {
-    padding: 20px;
-    border-radius: 20px;
+  .text-wrapper p {
+    text-align: center;
   }
 
   .voice-item {
     flex-direction: column;
-    align-items: flex-start;
-    margin: 30px auto;
+    align-items: center;
+    text-align: center;
   }
 
   .voice-text {
     margin-left: 0;
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
   .migration-inner {
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
     padding: 20px;
   }
 
   .migration-left,
   .migration-right {
     width: 100%;
+    text-align: center;
   }
 
   .migration-right h2 {
     font-size: 1rem;
-    line-height: 1.8;
+    line-height: 1.7;
+    margin-bottom: 20px;
   }
 
   .footer-logo-image {
     width: 140px;
   }
 }
-
