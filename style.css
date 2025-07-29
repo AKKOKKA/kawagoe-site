@@ -382,10 +382,13 @@ header {
   }
 
   .text-wrapper p {
-    text-align: center;
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 30em; /* 文字数ベースで幅制限 */
+    margin: 0 auto 1.5em;
   }
 
-   .image-and-text {
+  .image-and-text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -403,9 +406,9 @@ header {
   }
 
   .text-wrapper {
-    text-align: center;
+    max-width: 90%;
     margin: 0 auto;
-    max-width: 600px;
+    text-align: center;
   }
 
   .text-wrapper h2 {
