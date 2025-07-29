@@ -381,7 +381,8 @@ header {
   .text-wrapper,
   #kawagoe-section,
   #voice-section {
-    padding: 0 20px;
+    padding: 30px 20px;
+    text-align: center;
   }
 
   .text-wrapper p {
@@ -435,11 +436,10 @@ header {
     max-width: 90%;
   }
 
-  #voice-section {
-    padding: 30px 20px;
-    text-align: center;
+  .voice-title-img {
+    margin: 0 auto;
   }
-
+  
   .voice-item {
     flex-direction: column;
     align-items: center;
