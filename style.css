@@ -388,7 +388,7 @@ header {
   .text-wrapper p {
     font-size: 1rem;
     line-height: 1.8;
-    max-width: 30em; /* 文字数ベースで幅制限 */
+    max-width: 26em; /* 文字数ベースで幅制限 */
     margin: 0 auto 1.5em;
   }
 
