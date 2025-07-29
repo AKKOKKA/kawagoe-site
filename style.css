@@ -405,10 +405,11 @@ header {
   .text-wrapper {
     text-align: center;
     margin: 0 auto;
+    max-width: 600px;
   }
 
   .text-wrapper h2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .main-section {
