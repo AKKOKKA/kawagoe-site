@@ -427,7 +427,6 @@ header {
     width: 100%;
     max-width: 90%;
   }
-}
 
   .voice-item {
     flex-direction: column;
@@ -461,4 +460,4 @@ header {
   .footer-logo-image {
     width: 140px;
   }
-
+}
