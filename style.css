@@ -454,11 +454,11 @@ header {
   .voice-title-img {
     display: block;
     margin: 0 auto 0 auto;  /* ← 上方向に引っ張る */
-    padding: 0;
+    padding: 10px;
   }
 
   .voice-title::before {
-    top: -30px;         /* 上に引き上げて接続感を出す */
+    top: -20px;         /* 上に引き上げて接続感を出す */
     height: 25px;
   }
 
