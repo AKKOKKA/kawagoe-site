@@ -445,20 +445,26 @@ header {
   }
 
   .voice-title {
-  text-align: center;
-  margin-top: 10px; /* ← 間を詰める */
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.voice-title::before {
-  top: -25px;       /* ← 少し戻して隙間を埋める */
-  height: 25px;
-}
-
+    text-align: center;
+    margin-top: 0;       /* ← 詰める */
+    margin-bottom: 10px;
+    position: relative;
+  }
 
   .voice-title-img {
-    margin: 0 auto;
+    display: block;
+    margin: -10px auto 0 auto;  /* ← 上方向に引っ張る */
+    padding: 0;
+  }
+
+  .voice-title::before {
+    top: -30px;         /* 上に引き上げて接続感を出す */
+    height: 25px;
+  }
+
+  /* voice-section全体の余白を詰めすぎないよう調整 */
+  #voice-section {
+    padding: 20px 20px 30px 20px;
   }
 
   .voice-item {
