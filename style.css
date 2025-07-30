@@ -458,7 +458,7 @@ header {
   }
 
   .voice-title::before {
-    top: -30px;         /* 上に引き上げて接続感を出す */
+    top: -10px;         /* 上に引き上げて接続感を出す */
     height: 25px;
   }
 
