@@ -445,16 +445,17 @@ header {
   }
 
   .voice-title {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    position: relative;
-  }
+  text-align: center;
+  margin-top: 10px; /* ← 間を詰める */
+  margin-bottom: 20px;
+  position: relative;
+}
 
-  .voice-title::before {
-    top: -10px;
-    height: 15px;
-  }
+.voice-title::before {
+  top: -25px;       /* ← 少し戻して隙間を埋める */
+  height: 25px;
+}
+
 
   .voice-title-img {
     margin: 0 auto;
