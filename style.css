@@ -453,7 +453,7 @@ header {
 
   .voice-title-img {
     display: block;
-    margin: -10px auto 0 auto;  /* ← 上方向に引っ張る */
+    margin: 0 auto 0 auto;  /* ← 上方向に引っ張る */
     padding: 0;
   }
 
